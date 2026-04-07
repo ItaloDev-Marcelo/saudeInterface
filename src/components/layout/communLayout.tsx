@@ -1,9 +1,9 @@
 import type { communLayouProps } from "../../type/CommunLayoutProps"
 
-const communLayout = ({children, style}:communLayouProps) => {
+const CommunLayout = ({children, style}:communLayouProps) => {
   return (
-    <div className={style}>{children}</div>
+    <div className={`${style} glass-effect`}>{children}</div>
   )
 }
 
-export default communLayout
+export default CommunLayout
