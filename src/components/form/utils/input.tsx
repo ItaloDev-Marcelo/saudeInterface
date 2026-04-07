@@ -1,17 +1,28 @@
-import type {FieldValues} from "react-hook-form"
+import { type FieldValues } from "react-hook-form"
 import ErrorSms from './errorSms'
 import type { InputProps } from "../../../type/InputProps"
 
-const input =  <T extends FieldValues> ({register,name,type,errorTxt,title, errors}:InputProps<T>) => {
+function Input<T extends FieldValues>({
+  register,
+  name,
+  type,
+  errorTxt,
+  title,
+  errors
+}: InputProps<T>) {
   return (
-    <>
-      <label>
-          <span>{title}</span>
-          <input type={type} className={errors[name] && 'border-red-600'} {...register(name)} />
-          <ErrorSms errors={errors} name={name} errorTxt={errorTxt} />
-      </label>
-    </>
+    <label className='flex flex-col my-4'>
+      <span className="font-semibold text-[0.9rem] mb-2">{title}:</span>
+      <div className="">
+        <input
+          type={type}
+          className={`border ${errors[name] && 'border-red-600 '}   border-gray-200 rounded-sm w-75 h-9`}
+          {...register(name, {required: true})}
+        />
+        <ErrorSms errors={errors} name={name} errorTxt={errorTxt} />
+      </div>
+    </label>
   )
 }
 
-export default input
+export default Input
