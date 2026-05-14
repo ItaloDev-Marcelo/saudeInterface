@@ -8,7 +8,7 @@ export  const loginFormData = [
     {
         type: 'password',
         errorTxt: 'this field is required',
-        title: 'Password',
+        title: 'Senha',
         name: 'password' 
     }
 ]
