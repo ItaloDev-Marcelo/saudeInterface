@@ -1,4 +1,4 @@
-import type { communLayouProps } from "../../type/CommunLayoutProps"
+import type { communLayouProps } from "../../types/CommunLayoutProps"
 
 const CommunLayout = ({children, style}:communLayouProps) => {
   return (
