@@ -1,5 +1,5 @@
 import type {FieldValues } from "react-hook-form"
-import type { errorSmsProps } from "../../../type/ErrorSmsProps"
+import type { errorSmsProps } from "../../../types/ErrorSmsProps"
 
 const ErrorSms = 
  <T extends FieldValues> 

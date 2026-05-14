@@ -1,6 +1,6 @@
 import { type FieldValues } from "react-hook-form"
 import ErrorSms from './errorSms'
-import type { InputProps } from "../../../type/InputProps"
+import type { InputProps } from "../../../types/InputProps"
 
 function Input<T extends FieldValues>({
   register,
