@@ -1,9 +1,19 @@
-export const registerData = [
+import type { RegisterFormType } from "../../../types/RegisterFormType"
+
+type registerData= {
+        type: string,
+        errorTxt:string,
+        title: string,
+        name: keyof RegisterFormType
+}
+
+
+export const registerFormData:registerData[] = [
     {
         type: 'text',
         errorTxt: 'this field is required',
         title: 'Username',
-        name: 'Username' 
+        name: 'username' 
     },
     {
         type: 'text',
@@ -15,6 +25,6 @@ export const registerData = [
         type: 'password',
         errorTxt: 'this field is required',
         title: 'Senha',
-        name: 'senha' 
+        name: 'password' 
     }
 ]
