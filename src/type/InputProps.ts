@@ -9,5 +9,6 @@ export type InputProps<T extends FieldValues> = {
   type: string,
   errors: FieldErrors<T>
   errorTxt: string,
-  title: string
+  title: string,
+  style: string
 }
