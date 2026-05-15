@@ -3,7 +3,7 @@ import axios from 'axios'
 import Input from "./common/input"
 import { registerFormData } from './data/registerData'
 import { useForm, type SubmitHandler } from "react-hook-form"
-
+import SubmitBtn from '../form/common/SubmitBtn'
 
 type ResgisterPropsType = {
   hundleNextForm : (next:boolean) => void
@@ -43,7 +43,7 @@ const RegisterForm = ({hundleNextForm}:ResgisterPropsType) => {
           errorTxt={item.errorTxt} register={register} />
       ))
       }
-      <button type='submit' className="bg-blue-400 mt-4 w-100 h-12 rounded-sm text-white font-bold">Enviar</button>
+      <SubmitBtn />
     </form>
   )
 }

@@ -3,6 +3,7 @@ import Input from "./common/input"
 import axios from 'axios';
 import {loginFormData} from './data/loginData'
 import { useForm, type SubmitHandler } from "react-hook-form"
+import SubmitBtn from '../form/common/SubmitBtn'
 
 type loginFormProp = {
   hundlePopUp : (next:boolean) => void
@@ -39,7 +40,7 @@ const LoginForm = ({hundlePopUp}:loginFormProp) => {
         errorTxt={item.errorTxt} register={register} />
         ))
        }
-        <button type='submit' className="bg-blue-400 w-75 h-9 rounded-sm text-white font-bold">Entrar</button>
+        <SubmitBtn />
     </form>
   )
 }
