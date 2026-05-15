@@ -17,7 +17,7 @@ function Input<T extends FieldValues>({
       <div className="">
         <input
           type={type}
-          className={`border ${errors[name] && 'border-red-600 '} ${style}   border-gray-200 rounded-sm w-75 h-9`}
+          className={`border ${errors[name] && 'border-red-600 '} ${style} pl-2  border-gray-200 rounded-sm w-75 h-9`}
           {...register(name, {required: true})}
         />
         <ErrorSms errors={errors} name={name} errorTxt={errorTxt} />
