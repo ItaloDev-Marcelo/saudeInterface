@@ -5,7 +5,7 @@ import RegisterForm from './components/form/registerForm'
 import { useState } from 'react'
 import banner from './assets/banner.jpg'
 function App() {
-  const [nextForm, setNextForm] = useState(true);
+  const [nextForm, setNextForm] = useState(false);
   const [popUp, setPopUp] = useState(false)
   const hundleNextForm = (nextValue: boolean) => setNextForm(nextValue)
   const hundlePopUp = (nextValue: boolean) => setPopUp(nextValue)

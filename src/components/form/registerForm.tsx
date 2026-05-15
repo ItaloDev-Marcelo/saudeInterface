@@ -43,7 +43,7 @@ const RegisterForm = ({hundleNextForm}:ResgisterPropsType) => {
           errorTxt={item.errorTxt} register={register} />
       ))
       }
-      <SubmitBtn />
+      <SubmitBtn size='w-100' />
     </form>
   )
 }

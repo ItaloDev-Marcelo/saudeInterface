@@ -40,7 +40,7 @@ const LoginForm = ({hundlePopUp}:loginFormProp) => {
         errorTxt={item.errorTxt} register={register} />
         ))
        }
-        <SubmitBtn />
+        <SubmitBtn size='w-75'/>
     </form>
   )
 }
