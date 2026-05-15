@@ -13,8 +13,8 @@ export  const loginFormData:loginData[] = [
     {
         type: 'text',
         errorTxt: 'this field is required',
-        title: 'Name',
-        name: 'name' 
+        title: 'Email',
+        name: 'email' 
     },
     {
         type: 'password',
